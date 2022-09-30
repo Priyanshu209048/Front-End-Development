@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightcyan">
+        <form action="">
+            <h1>Personal Details</h1>
+            <p>
+                First Name <input type="text" name="name" placeholder="First Name" required>
+                Last Name <input type="text" name="name" placeholder="Last Name" required>
+            </p>
+            <fieldset>
+                <legend>Gender</legend>
+            <p>
+                Male <input type="radio" name="gender" id="male" required>
+                Female <input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+        <p>Address <textarea name="address" id="address" cols="90" rows="5" required></textarea></p>
+        <p>Pincode <input type="number" name="pincode" id="pincode" required></p>
+        <p>Email <input type="email" name="email" id="" required></p>
+        <p>
+            <h3> Skills </h3>
+           Java <input type="checkbox" name="skills" id="Java" required>
+           C++ <input type="checkbox" name="skills" id="C++" required>
+           Python <input type="checkbox" name="skills" id="Python" required>
+        </p>
+            
+
+        <h1>Payment Details</h1>
+        <p>
+            <select name="card_type" id="card_type" required>
+            <option value="--Select Card Type--">--Select Card Type--</option>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Rupay">Rupay</option>
+            </select>
+        </p>
+        <p>Card Number <input type="number" name="card_number" id="" required></p>
+        <p>Expiration Date <input type="date" name="expiration_date" id="" required></p>
+        <p>CVV <input type="password" name="cvv" id="" required></p>
+        <input type="file" name="" id="" required><br /><br />
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        </form>
+</body>
+</html>
