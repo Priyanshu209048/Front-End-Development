@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            height: 150%;
+        }
+        #container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+        }
+        #facebook{
+            height: 70px;
+            width: 200px;
+            margin: 5px;
+            margin-right: 0;
+            margin-top: 30px;
+            top: 80px;
+        }
+        #create-new-account{
+            background-color: rgb(46, 255, 46);
+            cursor: pointer;
+            border-radius: 5px;
+            width: 60%;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+        #login{
+            right: 30px;
+            text-align: center;
+            left: 0;
+            border: 1px solid rgb(156, 155, 155);
+            box-shadow: grey;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        #login-button{
+            background-color: #277cec;
+            height: 40px;
+            border-radius: 5px;
+            width: 80%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #login-button:hover{
+            background-color:#549dfd;
+            cursor: pointer;
+ 
+        }
+        #email{
+            height: 40px;
+            border-radius: 5px;
+            width: 80%;
+        }
+        #password{
+            height: 40px;
+            border-radius: 5px;
+            width: 80%;
+        }
+        p{
+            margin-bottom: -40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <img id="facebook" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg " alt="facebook-logo">
+    <div id="login">
+        <input type="email" placeholder="Email or Phone Number" id="email">
+        <br>
+        <br>
+        <input type="password" placeholder="Password" id="password">
+        <br>
+        <br>
+        <input type="button" value="Log In" id="login-button">
+        <br>
+        <a href="@">Forget Password?</a>
+        <hr style="width:95%; margin-top: 20px;" >
+        <br>
+        <input type="button" value="Create New Account" id="create-new-account">
+        <br>
+        <p><strong>Create a Page </strong>for a Celebrity, Brand or Business.</p>
+    </div>
+    </div>
+</div>
+</body>
+</html>
