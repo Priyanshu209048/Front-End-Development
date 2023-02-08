@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Educational Form</title>
+    </head>
+    <body bgcolor="cyan" align="center">
+        <a href="practice.html" target="_blank_">Home</a>
+        <form action="">
+            <h1>Education Form</h1>
+            <p><font color="red">Required Information to be field *</font></p>
+            <h2>Personal Details</h2>
+                <p> Name:* <input type="text" name="name" id="name" required></p>
+                <p> Password:* <input type="password" name="password" id="password" required></p>
+                <p> E-mail:* <input type="email" name="email" id="email" required></p>
+                <p>Gender:*  <input type="radio" name="male" id="male" required>Male <input type="radio" name="female" id="female" required>female</p>
+                <p>Contact:* <input type="number" name="contact" id="contact" required></p>
+            <h2>Educational Quailification</h2>
+            <p>Degree:*
+                <select name="degree" id="degree" required>
+                    <option value="">--Select Group--</option>
+                    <option value="Degree">Degree</option>
+                    <option value="Bachelor">Bachelor</option>
+                    <option value="Doctor">Doctor</option>
+                </select>
+            </p>
+            <p>Engineering:*
+                <select name="engineering" id="engineering" required>
+                    <option value="">--Select Group--</option>
+                    <option value="CSE">CSE</option>
+                    <option value="Civil">Civil</option>
+                    <option value="Mechanical">Mechanical</option>
+                </select>
+            </p>
+            <p>Hobbies:*  <input type="radio" name="Playing Chess" id="Playing Chess" required>Playing Chess <input type="radio" name="Reading Books" id="Reading Books" required>Reading Books</p>
+            <h2>Address*</h2>
+                <textarea name="address" id="address" cols="40" rows="5" required></textarea>
+            <p>Attach Resume:* <input type="file" name="Attach_Resume" id="Attach_Resume" required></p>
+            <input type="button" value="Submit"> <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
