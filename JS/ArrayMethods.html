@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var arr1 = ["Hello ", "Welcome ", "To "];
+        document.write(arr1 + ": First Array</br>");
+        var arr2 = ["My ", "Website "];
+        document.write(arr2 + ": Second Array</br>");
+
+        var concatenation = arr1.concat(arr2);
+        document.write("Array 1 after concatenation: ");
+        document.write(concatenation + "</br>");
+
+        var joining = arr1.join(",");
+        document.write("Array 1 after joining comma btween them: ");
+        document.write(joining + "</br>");
+
+        document.write("Array 1 after slicing: ");
+        for(var i=0; i<arr1.length; i++){
+            document.write(arr1[i].slice(0,3) + " ");
+        }
+
+    </script>
+    
+</body>
+</html>
