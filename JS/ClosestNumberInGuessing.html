@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // var randNumber = Math.floor((Math.random() * 100) + 1);
+        // var count = 0;
+        // var close = 0;
+        // for(let i=0; i<10; i++){
+        //     var userInput = parseInt(prompt("Select Number from 1 to 100: "));
+        //     //var temp;
+        //     // close = userInput;
+        //     if(userInput < randNumber){
+        //         alert("Your number is lesser then random");
+        //         count++;
+        //         if(i == 0){
+        //             close = userInput;
+        //         }
+        //         var temp = userInput;
+        //         if((randNumber-temp) < (randNumber-close)){
+        //             close = temp;
+        //         }
+
+        //     } else if(userInput > randNumber){
+        //         alert("Your number is greater then random");
+        //         count++;
+                
+        //         var temp = userInput;
+        //         if((temp-randNumber) < (close-randNumber)){
+        //             close = temp;
+        //         }
+        //     } else{
+        //         alert("you guess correct");
+        //     }
+        // }
+
+        var randNumber = Math.floor((Math.random() * 100) + 1);
+        var count = 0;
+        var close = 0;
+        for(var i=0; i<10; i++){
+            var userInput = parseInt(prompt("Enter number between 1 to 100: "));
+            var temp = 0;
+            if(userInput < randNumber){
+                if(i == 0){
+                    close = userInput;
+                } else{
+                    temp = userInput;
+                    if((randNumber - temp) < (randNumber - close)){
+                        close = temp;
+                    }
+                }
+            }
+            else if (userInput > randNumber) {
+                if(i == 0){
+                    close = userInput;
+                } else{
+                    temp = userInput;
+                    if((temp - randNumber) < (close - randNumber)){
+                        close = temp;
+                    }
+                }
+            }
+            else{
+                alert("You guess the correct number");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
