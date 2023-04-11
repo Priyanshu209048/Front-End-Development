@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>This is the Example of class Inheritance</h3>
+    <p id="cl"></p>
+
+    <script>
+
+        class Car{
+            constructor(brand){
+                this.carName = brand;
+            }
+
+            print(){
+                return 'I have a ' + this.carName;
+            }
+        }
+
+        class Model extends Car{
+            constructor(brand, model){
+                super(brand);
+                this.mod = model;
+            }
+
+            show(){
+                return this.print() + ', The model name is ' + this.mod;
+            }
+        }
+
+        let car = new Model("BMW", "i8");
+        // document.write(car.show());
+        document.getElementById("cl").innerHTML = car.show();
+
+    </script>
+
+</body>
+</html>
