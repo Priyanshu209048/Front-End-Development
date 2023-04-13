@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //var starting = parseInt(prompt("Starting Number: "));
+        var number = parseInt(prompt("Enter number: "));
+        let num1 = 0;
+        let num2 = num1 + 1;
+        var close = 0;
+        for(let i=0; i<number; i++){
+            //close = 0;
+            if(i == 0){
+                document.write(num1 + ", ");
+                if((number - num1) < (number - close)){
+                    close = num1;
+                }
+            } 
+            else if (i == 1){
+                document.write(num2 + ", ");
+                if((number - num2) < (number - close)){
+                    close = num2;
+                }
+            } 
+            else{
+                var sum = num1 + num2;
+                if(Math.abs(number - sum) < Math.abs(number - close)){
+                    close = sum;
+                }
+                num1 = num2; 
+                num2 = sum;
+                document.write(sum + ", ");
+            }
+        }
+
+        document.write("Close to your number is: " + close);
+
+    </script>
+    
+</body>
+</html>
