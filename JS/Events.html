@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Events in DOM</h1>
+    <p id="p1">This is the first paragraph</p>
+    <p id="p2"></p>
+    <input type="text" name="Name" id="input">
+    <br>
+    <br>
+    <input type="button" value="Click Me!" id="btn" onclick="updateOutput()">
+    <br>
+    <br>
+    <input type="button" value="Click Me!" id="btn1" >
+    
+</body>
+
+<script>
+
+    function updateOutput(){
+        let input = document.getElementById("input").value;
+        document.getElementById("p2").innerHTML = "Your name is " + input;
+    }
+
+    let myBtn = document.getElementById("btn1");
+
+    myBtn.addEventListener("mouseover", fun1);
+        function fun1(){
+            myBtn.style.backgroundColor = "Yellow";
+        }
+        
+    myBtn.addEventListener("mousedown",
+    function fun2(){
+        myBtn.style.backgroundColor = "Red";
+    });
+
+</script>
+
+</html>
