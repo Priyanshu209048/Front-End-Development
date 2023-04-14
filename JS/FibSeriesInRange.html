@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var starting = parseInt(prompt("Enter number: "));
+        var number = parseInt(prompt("Enter number: "));
+        let num1 = 0, num2 = num1 + 1;
+        var sum = num1 + num2;
+        for(let i=2; i<starting; i++){
+            //document.write(sum + " ");   
+            num1 = num2; 
+            num2 = sum;
+            sum = num1 + num2;
+        }
+
+        for(var j=starting; j<number; j++){
+            document.write(sum + " ");   
+            num1 = num2; 
+            num2 = sum;
+            sum = num1 + num2;
+        }
+
+    </script>
+    
+</body>
+</html>
