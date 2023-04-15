@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        document.write("<table border=5 width=70%>");
+        document.write("<thead bgcolor=cyan>");
+        document.write("<tr alignment=center>");
+        document.write("<th> S.No </th>");
+        document.write("<th> Name </th>");
+        document.write("<th> Course </th>");
+        document.write("<th> Marks</th>");
+        document.write("</tr>");
+        document.write("</thead>");
+        document.write("<tbody>");
+        var enter = parseInt(prompt("Enter number of entry: "));
+        //document.write("<td>");
+        for(var i=0; i<enter; i++){
+            document.write("<tr>");
+            var roll = parseInt(prompt("Enter Roll No.: "));
+            document.write("<td>" + roll + "</td>");
+            var name = prompt("Enter Student Name: ");
+            document.write("<td>" + name + "</td>");
+            var cousrse = prompt("Enter Student Course: ");
+            document.write("<td>" + cousrse + "</td>");
+            var marks = parseInt(prompt("Enter Student Marks: "));
+            document.write("<td>" + marks + "</td>");
+            document.write("</tr></br>");
+        }
+        //document.write("</td>");
+        document.write("</tbody>");
+        document.write("</table>");
+
+    </script>
+    
+</body>
+</html>
