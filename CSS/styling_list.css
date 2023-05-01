@@ -1,0 +1,32 @@
+nav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    float: left;
+}
+nav{
+    background-color: black;
+    overflow: hidden;
+}
+nav a:hover{
+    color: cornflowerblue;
+}
+nav a:visited{
+    color: purple;
+}
+table,tr,th,td{
+    border: solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 5px;
+}
+tr{
+    background-color: lightcoral;
+}
+th{
+    background-color: lightyellow;
+}
+td{
+    background-color: lightgreen;
+}
