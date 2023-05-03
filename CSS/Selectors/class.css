@@ -1,0 +1,19 @@
+span.special,li.special{
+    color: goldenrod;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+li em{
+    color: chartreuse;
+}
+h6+p{
+    font-size: 200%;
+}
+h1+span{
+    font-size: 200%;
+}
+a:hover{
+    color: brown;
+    text-decoration: none;
+}
